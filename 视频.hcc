@@ -1,0 +1,36 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"free_watch_time\":\"99999\" ",
+      "matchValue" : "\"free_watch_time\":\"60\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "视频",
+  "description" : "医考帮视频解析",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.yikaobang.com.cn",
+      "path" : "\/*"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.yikaobang.com.cn",
+      "path" : ""
+    }
+  ]
+}
